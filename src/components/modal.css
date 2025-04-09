@@ -1,0 +1,8 @@
+.modal {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    z-index: 120;
+    top: 20%;
+    border: 1px solid;
+}
