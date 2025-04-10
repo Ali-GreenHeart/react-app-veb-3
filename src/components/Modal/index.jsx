@@ -1,8 +1,9 @@
 import React, { useState } from "react"
-import "./modal.css";
+import styles from "./modal.module.css"
 
 const Modal = () => {
     const [isOpen, setIsOpen] = useState(false)
+    console.log(styles.modal)
     return (
         <>
             <button onClick={() => {
@@ -11,7 +12,7 @@ const Modal = () => {
                 Modal-i {isOpen ? "bagla" : "ac"}
             </button>
             {
-                isOpen && <div className="modal">
+                isOpen && <div className={styles.modal}>
                     <h1>Modalin basligi
                         <button onClick={() => setIsOpen(false)}>X</button>
                     </h1>

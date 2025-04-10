@@ -1,6 +1,9 @@
-import { headerStyles } from "../utils/measurement";
+import { headerStyles } from "../../utils/measurement";
+import styles from "./header.module.css"
+
 const Header = ({ heading, variant = "h1" }) => {
     const fontSize = headerStyles[variant] ? headerStyles[variant] + 'px' : headerStyles["h1"];
+    console.log(styles.modal)
     return (
         <header>
             <h1
