@@ -1,13 +1,9 @@
 import { createRoot } from 'react-dom/client'
-import Modal from './components/Modal'
-import Header from './components/Header'
+import UsersPage from './pages/users'
 
 createRoot(document.getElementById('root')).render(
   <>
-    <Modal />
-    <Header />
+    <UsersPage />
   </>
 )
 
-
-// npm create vite@latest react-app -- --template react

@@ -1,4 +1,4 @@
-import { headerStyles } from "../../utils/measurement";
+import { headerStyles } from "../../../utils/measurement";
 import styles from "./header.module.css"
 
 const Header = ({ heading, variant = "h1" }) => {
