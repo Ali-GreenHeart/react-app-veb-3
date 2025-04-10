@@ -1,9 +1,9 @@
 import { createRoot } from 'react-dom/client'
-import UsersPage from './pages/users'
+import TodosPage from './pages/todos'
 
 createRoot(document.getElementById('root')).render(
   <>
-    <UsersPage />
+    <TodosPage />
   </>
 )
 
