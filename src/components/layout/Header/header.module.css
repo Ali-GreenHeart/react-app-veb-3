@@ -3,3 +3,7 @@
     top: 20%;
     border: 1px solid;
 }
+
+.activeNavLink {
+    color: violet !important;
+}
