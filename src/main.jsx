@@ -1,9 +1,10 @@
 import { createRoot } from 'react-dom/client'
-import TodosPage from './pages/todos'
+import App from './App'
+import { BrowserRouter } from 'react-router'
 
 createRoot(document.getElementById('root')).render(
-  <>
-    <TodosPage />
-  </>
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
 )
 
