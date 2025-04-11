@@ -16,7 +16,6 @@ const TodosPage = () => {
     useEffect(() => {
         getData('todos')
             .then((d) => {
-                console.log(d)
                 setTodos(d)
             })
     }, [])
