@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { useParams } from "react-router"
+import { Link, useParams } from "react-router"
 import { getData } from "../../utils/api"
 
 const SingleTodo = ({ }) => {
@@ -14,6 +14,7 @@ const SingleTodo = ({ }) => {
 
     return (
         <div>
+            <Link to="/todos">Back to todos page</Link>
             <h1>Todo title: {todo.title}</h1>
         </div>
     )

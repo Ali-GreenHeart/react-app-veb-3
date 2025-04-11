@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { getData } from "../../utils/api"
+import { Link } from "react-router";
 // Component 3 halda render edir!
 // 1. oz daxili state-i deyiserse (setUser, setData, set*)
 // 2. props deyisende!
@@ -59,6 +60,7 @@ const TodosPage = () => {
                                     */
                                 }}
                             >click my tongue!</button>
+                            <Link to={`/todos/${todo.id}`}>go</Link>
                         </div>
                     )
                 })
