@@ -48,3 +48,24 @@ export const users = [
         job: 'test8',
     },
 ]
+
+
+
+export const getUsers = async () => {
+    // return users;
+    const newPromise = new Promise((res, rej) => {
+        setTimeout(() => {
+            res(users)
+        }, 1500);
+        // setTimeout(() => {
+        //     rej({ status: 401, message: 'Not authenticated!' })
+        // }, 1200);
+        // setTimeout(() => {
+        //     rej({ status: 404, message: 'Not found!' })
+        // }, 1000);
+        // setTimeout(() => {
+        //     rej({ status: 503, message: 'server is not available!' })
+        // }, 1000);
+    })
+    return newPromise;
+}
