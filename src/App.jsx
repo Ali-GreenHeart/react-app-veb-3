@@ -5,6 +5,8 @@ import AboutPage from "./pages/about"
 import SingleTodo from "./pages/single-todo"
 import Header from "./components/layout/Header"
 import UsersPage from "./pages/users"
+import CounterWithSingleUndo from "./pages/counter/CounterWithSingleUndo"
+import CounterWithMultipleUndo from "./pages/counter/CounterWithMultipleUndo"
 
 const App = ({ }) => {
     return (
@@ -16,6 +18,8 @@ const App = ({ }) => {
                 <Route path="/todos/:id" element={<SingleTodo />} />
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/users" element={<UsersPage />} />
+                <Route path="/counter" element={<CounterWithSingleUndo />} />
+                <Route path="/counter1" element={<CounterWithMultipleUndo />} />
                 <Route path="*" element={<NotFoundPage />} />
             </Routes>
         </>
