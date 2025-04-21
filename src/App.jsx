@@ -8,6 +8,7 @@ import UsersPage from "./pages/users"
 import CounterWithSingleUndo from "./pages/counter/CounterWithSingleUndo"
 import CounterWithMultipleUndo from "./pages/counter/CounterWithMultipleUndo"
 import UsersWithReducerPage from "./pages/users-with-reducer"
+import UsersWithRTKPage from "./pages/users-with-rtk"
 
 const App = ({ }) => {
     return (
@@ -20,6 +21,7 @@ const App = ({ }) => {
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/users" element={<UsersPage />} />
                 <Route path="/users-with-reducer" element={<UsersWithReducerPage />} />
+                <Route path="/users-with-rtk" element={<UsersWithRTKPage />} />
                 <Route path="/counter" element={<CounterWithSingleUndo />} />
                 <Route path="/counter1" element={<CounterWithMultipleUndo />} />
                 <Route path="*" element={<NotFoundPage />} />
