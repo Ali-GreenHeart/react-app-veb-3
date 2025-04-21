@@ -7,6 +7,7 @@ import Header from "./components/layout/Header"
 import UsersPage from "./pages/users"
 import CounterWithSingleUndo from "./pages/counter/CounterWithSingleUndo"
 import CounterWithMultipleUndo from "./pages/counter/CounterWithMultipleUndo"
+import UsersWithReducerPage from "./pages/users-with-reducer"
 
 const App = ({ }) => {
     return (
@@ -18,6 +19,7 @@ const App = ({ }) => {
                 <Route path="/todos/:id" element={<SingleTodo />} />
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/users" element={<UsersPage />} />
+                <Route path="/users-with-reducer" element={<UsersWithReducerPage />} />
                 <Route path="/counter" element={<CounterWithSingleUndo />} />
                 <Route path="/counter1" element={<CounterWithMultipleUndo />} />
                 <Route path="*" element={<NotFoundPage />} />
